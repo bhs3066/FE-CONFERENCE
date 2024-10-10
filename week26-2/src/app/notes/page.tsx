@@ -40,9 +40,6 @@ export default async function NotesPages() {
       if (!response.ok) {
         throw new Error("Failed to create note");
       }
-
-      setTitle("");
-      setContent("");
     } catch (error) {
       console.error("Failed to create note:", error);
     }
